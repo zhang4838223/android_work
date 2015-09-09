@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">forwardWithResult</string>
+    <string name="receive_text">点击按钮，获取如下活动结果</string>
+    <string name="receive_button">get result</string>
+
+    <string name="sender_text">pick a result to return!</string>
+    <string name="Corky">Corky</string>
+    <string name="Violet">Violet</string>
+
+</resources>
