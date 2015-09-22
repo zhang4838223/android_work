@@ -93,7 +93,8 @@ public class MyActivity extends Activity implements View.OnClickListener {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //跳转，访问网址
-                        Uri uri = Uri.parse("http://www.baidu.com/");
+                        //getString(R.string.dialog_url)方法可获取配置文件的值
+                        Uri uri = Uri.parse(getString(R.string.dialog_url));
                         Intent in = new Intent(Intent.ACTION_VIEW,uri);
                         startActivity(in);
                     }

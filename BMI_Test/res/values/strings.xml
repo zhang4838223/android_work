@@ -14,9 +14,10 @@
     <string name="dialog_message">
         Android BMI Calc 0.6\n
         作者 zxj\n
-        zxj+ android [at] gmail.com
+        zxj+@gmail.com
     </string>
     <string name="dialog_ok">确认</string>
     <string name="dialog_homepage">首页</string>
+    <string name="dialog_url">http://www.baidu.com/</string>
     <string name="toast_error">输入错误</string>
 </resources>
