@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI_Test</string>
+
+    <string name="weight">体重</string>
+    <string name="height">身高</string>
+    <string name="calculate">计算BMI值</string>
+
+    <string name="advice_light">体重太轻了！</string>
+    <string name="advice_average">身体很棒！</string>
+    <string name="advice_heavy">赶紧节食吧！</string>
+</resources>
