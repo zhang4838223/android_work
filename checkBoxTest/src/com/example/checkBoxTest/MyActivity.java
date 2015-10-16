@@ -5,10 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.Toast;
+import android.widget.*;
 
 public class MyActivity extends Activity{
     /**
@@ -17,8 +14,8 @@ public class MyActivity extends Activity{
 
     private EditText usernameT;
     private Button registerT;
-    private RadioButton menT;
-    private RadioButton womenT;
+    private RadioButton genderBtn;
+    private RadioGroup genderT;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +34,9 @@ public class MyActivity extends Activity{
     private void registEvent() {
         String username = usernameT.getText().toString();
 
-        Log.v("username:",username);
-        Log.v("sex:", menT.isChecked() ? menT.getText().toString():womenT.getText().toString());
+        Log.v("username:", username);
+        genderBtn = (RadioButton)findViewById(genderT.getCheckedRadioButtonId());
+        Log.v("sex:", genderBtn.getText().toString());
         if(username==null||username.length()==0){
             Toast.makeText(MyActivity.this,"用户名不能为空！",Toast.LENGTH_SHORT).show();
         }else if(username.length()>6){
@@ -55,8 +53,7 @@ public class MyActivity extends Activity{
         usernameT = (EditText)findViewById(R.id.username);
         registerT = (Button)findViewById(R.id.register);
 
-        menT = (RadioButton)findViewById(R.id.man);
-        womenT = (RadioButton)findViewById(R.id.woman);
+        genderT = (RadioGroup)findViewById(R.id.gender_group);
     }
 
 }

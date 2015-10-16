@@ -14,5 +14,6 @@
     <string name="basketball">篮球</string>
     <string name="football">足球</string>
     <string name="pingpong">乒乓球</string>
+    <string name="finish">返回</string>
 
 </resources>
