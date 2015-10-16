@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">checkBoxTest</string>
+    <string name="username">用户名:</string>
+    <string name="password">密  码:</string>
+    <string name="gender">性  别:</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="email">邮  箱:</string>
+    <string name="register">注  册</string>
+    <string name="usernamehint">请输入用户名！</string>
+    <string name="loginSuccess">注册成功！</string>
+    <string name="hobby">爱  好:</string>
+    <string name="basketball">篮球</string>
+    <string name="football">足球</string>
+    <string name="pingpong">乒乓球</string>
+
+</resources>
