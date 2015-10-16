@@ -49,7 +49,10 @@
         </TableRow>
     </TableLayout>
 
-    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <TableLayout
+            android:id="@+id/gender_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
         <TableRow>
             <TextView
                     android:layout_width="fill_parent"
@@ -72,6 +75,7 @@
         </TableRow>
     </TableLayout>
     <TableLayout
+            android:id="@+id/hobby_layout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
         <TableRow>
