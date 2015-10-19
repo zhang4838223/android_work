@@ -21,6 +21,7 @@ public class SpinnerActivity extends Activity implements AdapterView.OnItemSelec
         //通过ArrayAdapter准备下拉显示资源
         String[] cities = getResources().getStringArray(R.array.cities);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(SpinnerActivity.this,android.R.layout.simple_spinner_item,cities);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         citiesSpinner.setAdapter(adapter);
 
 
