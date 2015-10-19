@@ -15,5 +15,6 @@
         <activity android:name=".DataPickerActivity"/>
         <activity android:name=".TimePickerActivity"/>
         <activity android:name=".ScrollViewActivity"/>
+        <activity android:name=".ProgressBarActivity"/>
     </application>
 </manifest>

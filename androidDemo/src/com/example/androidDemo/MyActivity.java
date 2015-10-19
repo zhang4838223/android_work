@@ -46,11 +46,21 @@ public class MyActivity extends Activity {
         });
         //点击跳转到ScrollViewActivity
         Button scrollViewBtn = (Button)findViewById(R.id.scrollview_btn);
-        timeBtn.setOnClickListener(new View.OnClickListener() {
+        scrollViewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MyActivity.this,ScrollViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        //点击跳转到ProgressBarActivity
+        Button progressBarBtn = (Button)findViewById(R.id.progress_btn);
+        progressBarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MyActivity.this,ProgressBarActivity.class);
                 startActivity(intent);
             }
         });
