@@ -42,20 +42,28 @@ public class Myadapter extends BaseAdapter {
         return position;
     }
 
+    /**
+     *该方法会返回指定位置对应的视图数据
+     * @param position 下拉列表的位置索引
+     * @param convertView 指定位置所对应的视图
+     * @param parent
+     * @return
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+        //通过LayoutInflater获取main对应的视图
         convertView = layoutInflater.inflate(R.layout.main, null);
 
-        if (convertView != null){
+        if (convertView != null){//获取main视图中的控件
             TextView addr = (TextView)convertView.findViewById(R.id.address);
             TextView name = (TextView)convertView.findViewById(R.id.name);
 
             addr.setText(personList.get(position).getAddress());
             name.setText(personList.get(position).getName());
         }
-
+        //返回视图用于显示
         return convertView;
     }
 }
