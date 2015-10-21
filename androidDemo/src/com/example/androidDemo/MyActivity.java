@@ -64,5 +64,15 @@ public class MyActivity extends Activity {
                 startActivity(intent);
             }
         });
+        //点击跳转到SeekBarActivity
+        Button seekBarBtn = (Button)findViewById(R.id.seekbar_btn);
+        seekBarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MyActivity.this,SeekBarActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
