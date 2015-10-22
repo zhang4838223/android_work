@@ -32,7 +32,7 @@ public class ImageShowActivity extends Activity implements ViewSwitcher.ViewFact
         mSwitcher.setFactory(this);
         mSwitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
         mSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-        //下方的小图片列表区域
+        //下方的小图片列表区域，可拖动
         Gallery g = (Gallery) findViewById(R.id.gallery);
         //适配装载图片列表资源
         g.setAdapter(new ImageAdapter(this));
