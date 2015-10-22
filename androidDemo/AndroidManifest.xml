@@ -18,5 +18,6 @@
         <activity android:name=".ProgressBarActivity"/>
         <activity android:name=".SeekBarActivity"/>
         <activity android:name=".RatingBarActivity"/>
+        <activity android:name=".ImageShowActivity"/>
     </application>
 </manifest>

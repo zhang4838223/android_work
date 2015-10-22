@@ -84,5 +84,15 @@ public class MyActivity extends Activity {
                 startActivity(intent);
             }
         });
+        //点击跳转到ImageShowActivity
+        Button imageSwithcBtn = (Button)findViewById(R.id.imageswitch_btn);
+        imageSwithcBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MyActivity.this,ImageShowActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
