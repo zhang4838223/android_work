@@ -96,7 +96,9 @@ public class ImageShowActivity extends Activity implements ViewSwitcher.ViewFact
             //设置列表各个位置的图片资源
             iv.setImageResource(mThumbIds[position]);
             iv.setAdjustViewBounds(true);
+            //设置图片打下
             iv.setLayoutParams(new Gallery.LayoutParams(Gallery.LayoutParams.WRAP_CONTENT, Gallery.LayoutParams.WRAP_CONTENT));
+            //设置图片背景
             iv.setBackgroundResource(R.drawable.bc);
 
             return iv;
