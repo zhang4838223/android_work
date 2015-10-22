@@ -19,5 +19,6 @@
         <activity android:name=".SeekBarActivity"/>
         <activity android:name=".RatingBarActivity"/>
         <activity android:name=".ImageShowActivity"/>
+        <activity android:name=".GridViewActivity"/>
     </application>
 </manifest>
