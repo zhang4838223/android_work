@@ -13,7 +13,7 @@ public class ImageShowActivity extends Activity implements ViewSwitcher.ViewFact
     /**
      * Called when the activity is first created.
      */
-
+    //处理图片显示
     private ImageSwitcher mSwitcher;
     private int[] mThumbIds = {R.drawable.lidian_s,R.drawable.lvbu,R.drawable.xiaoqiao,
             R.drawable.zhangfei_s,R.drawable.zhoutao_s};
@@ -32,8 +32,9 @@ public class ImageShowActivity extends Activity implements ViewSwitcher.ViewFact
         mSwitcher.setFactory(this);
         mSwitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
         mSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-
+        //下方的小图片列表区域
         Gallery g = (Gallery) findViewById(R.id.gallery);
+        //适配装载图片列表资源
         g.setAdapter(new ImageAdapter(this));
         g.setOnItemSelectedListener(this);
 
@@ -92,6 +93,7 @@ public class ImageShowActivity extends Activity implements ViewSwitcher.ViewFact
         public View getView(int position, View convertView, ViewGroup parent) {
 
             ImageView iv = new ImageView(mContext);
+            //设置列表各个位置的图片资源
             iv.setImageResource(mThumbIds[position]);
             iv.setAdjustViewBounds(true);
             iv.setLayoutParams(new Gallery.LayoutParams(Gallery.LayoutParams.WRAP_CONTENT, Gallery.LayoutParams.WRAP_CONTENT));
