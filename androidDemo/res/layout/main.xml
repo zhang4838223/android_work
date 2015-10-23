@@ -67,5 +67,12 @@
             android:text="tab view"
             android:layout_gravity="center_horizontal"
             />
+    <Button
+            android:id="@+id/tab_activities_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab activities view"
+            android:layout_gravity="center_horizontal"
+            />
 </LinearLayout>
 

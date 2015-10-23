@@ -21,5 +21,6 @@
         <activity android:name=".ImageShowActivity"/>
         <activity android:name=".GridViewActivity"/>
         <activity android:name=".TagDemoActivity"/>
+        <activity android:name=".TabsActivities"/>
     </application>
 </manifest>
