@@ -28,20 +28,20 @@ public class TabsActivities extends TabActivity {
         tab = tabHost.newTabSpec("tab1")//初始化第一个tab
                 .setIndicator("show1", res.getDrawable(android.R.drawable.ic_media_play))//设置标签的名称及图标
                 .setContent(in);//设置标签的内容为Intent
-        tabHost.addTab(tab);
+        tabHost.addTab(tab);//将tab添加到tab容器中
 
         //第二个tab
         in = new Intent(this, TimePickerActivity.class);//初始化第二个intent
         tab = tabHost.newTabSpec("tab2")//初始化第二个tab
                 .setIndicator("show2", res.getDrawable(android.R.drawable.ic_menu_edit))//设置标签的名称及图标
                 .setContent(in);//设置标签的内容为Intent
-        tabHost.addTab(tab);
+        tabHost.addTab(tab);//将tab添加到tab容器中
         //第三个tab
         in = new Intent(this, GridViewActivity.class);//初始化intent
         tab = tabHost.newTabSpec("tab3")//初始化tab
                 .setIndicator("show3", res.getDrawable(android.R.drawable.btn_radio))//设置标签的名称及图标
                 .setContent(in);//设置标签的内容为Intent
-        tabHost.addTab(tab);
+        tabHost.addTab(tab);//将tab添加到tab容器中
 
         tabHost.setCurrentTab(0);
     }
